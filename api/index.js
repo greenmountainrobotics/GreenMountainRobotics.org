@@ -1,6 +1,6 @@
 const app = require('express')();
 
-app.get('/api', (req, res) => {
+app.get('/donate', (req, res) => {
   res.redirect("https://bank.hackclub.com/donations/start/green-mountain-robotics")
 });
 
