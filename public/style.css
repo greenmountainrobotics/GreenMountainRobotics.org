@@ -27,7 +27,7 @@ html {
 
 .title {
   text-align: left;
-  margin-top: 3%;
+  margin-top: 4%;
   color: #d89941;
   font-size: 4em;
   width: 90%;
@@ -69,12 +69,10 @@ p {
 }
 
 .quicklinks {
-  width: 50px;
-  
   top: 325px;
   display: flex;
   flex-direction: row;
-  margin-right: 10px;
+  margin-right: 25px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -87,9 +85,9 @@ p {
 .otherpage {
   text-decoration-line: none;
   color: #d89941;
-  font-size: 20px;
+  font-size: 1.6em;
   font-family: 'Josefin Sans', sans-serif;
-  margin-bottom: 8%;
+  margin-bottom: 10%;
   display: flex;
 }
 
