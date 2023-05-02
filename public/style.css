@@ -77,7 +77,7 @@ p {
 }
 
 .pages {
-  margin-top: 18px;
+  margin-top: 22px;
   font-family: 'Josefin Sans', sans-serif;
   flex-direction: column;
 }
@@ -165,7 +165,7 @@ textarea:focus {
 
 .textbox:focus {
   outline: none;
-  initial-value: ;
+  initial-value: 0;
 }
 
 .button {
