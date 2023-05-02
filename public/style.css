@@ -137,10 +137,12 @@ textarea {
   transition: width 1s;
   resize: none;
   font-size: 1.4em;
+  border: none;
   border-color: black;
   text-decoration-color: black;
   border-width: 2px;
   font-family: 'Josefin Sans', sans-serif;
+  padding: 10px;
 }
 
 ::placeholder {
@@ -157,8 +159,9 @@ textarea:focus {
   font-size: 1.2em;
   letter-spacing: .1em;
   background-color: #5e8767;
+  border: none;
   border-color: black;
-  border-width: 2px;
+  border-width: 10px;
   font-family: 'Josefin Sans', sans-serif;
   padding: .5%;
 }
@@ -173,8 +176,9 @@ textarea:focus {
   background-color: #5e8767;
   color: black;
   padding: 1%;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   font-family: 'Josefin Sans', sans-serif;
+  border: none;
 }
 
 .button:hover {
