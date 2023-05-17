@@ -5,6 +5,12 @@ html {
   width: 100%;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #2c3f30;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -13,31 +19,38 @@ html {
   gap: 5px;
   font-family: 'Josefin Sans', sans-serif;
   height: 100%;
+  width: 100%;
 }
 
 .content {
+  top: 0;
   margin-bottom: 70px;
-  margin-left: 3%;
+  margin-left: 120%;
   position: relative;
-  left: 300px;
-  width: 1000px;
-  height: 100%;
+  /* left: 118%; */
+  width: 320%;
+  height: 90%;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .title {
   text-align: left;
-  margin-top: 4%;
+  margin-top: 5%;
   color: #d89941;
   font-size: 4em;
-  width: 90%;
   font-family: 'Josefin Sans', sans-serif;
+  /* background-color: #1f2d22; */
+  padding: none;
+  height: 9%;
+  width: 85%;
 }
 
 h2 {
   text-align: left;
+  font-size: 2.5em;
   color: #d89941;
-  font-size: 2em;
+  line-height: 2;
+  width: 90%;
   font-family: 'Josefin Sans', sans-serif;
   }
 
@@ -51,21 +64,31 @@ p {
 }
 
 .logo {
-  width: 250px;
-  padding-left: 25px;
-  padding-top: 20px;
+  width: 80%;
+  padding-left: 14%;
+  padding-top: 12%;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   position: fixed;
+  background-color: #CDCDCD;
+  padding-right: 1.5%;
+  left: 2.2%;
+  top: 3%;
+  /* margin-left: 1%; */
+  padding-bottom: 1%;
+  height: 82%;
+  outline: 5px solid #2c3f30;
+  outline-offset: -15px;
+  width: 18%;
 }
 
 .notlogo {
-  padding-left: 25px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-left: 12%;
+  padding-bottom: 0;
+  padding-top: 10%;
 }
 
 .quicklinks {
@@ -77,18 +100,19 @@ p {
 }
 
 .pages {
-  margin-top: 24px;
+  margin-top: 30px;
   font-family: 'Josefin Sans', sans-serif;
   flex-direction: column;
 }
 
 .otherpage {
   text-decoration-line: none;
-  color: #d89941;
+  color: #1f2d22;
   font-size: 1.6em;
   font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 10%;
   display: flex;
+  text-decoration: bold;
 }
 
 .sponsors {
@@ -126,7 +150,7 @@ label {
 
 p2 {
   line-height: 4;
-  color: white;
+  color: #f5edc6;
   font-size: 1.5em;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -143,6 +167,7 @@ textarea {
   border-width: 2px;
   font-family: 'Josefin Sans', sans-serif;
   padding: 10px;
+  border-radius: 6px;
 }
 
 ::placeholder {
@@ -164,6 +189,7 @@ textarea:focus {
   border-width: 10px;
   font-family: 'Josefin Sans', sans-serif;
   padding: 7px;
+  border-radius: 4px;
 }
 
 .textbox:focus {
@@ -175,10 +201,13 @@ textarea:focus {
   font-size: 1.5em;
   background-color: #5e8767;
   color: black;
-  padding: 1%;
+  padding: .5%;
   letter-spacing: .05em;
   font-family: 'Josefin Sans', sans-serif;
   border: none;
+  height: 4%;
+  width: 10%;
+  border-radius: 6px;
 }
 
 .button:hover {
@@ -192,9 +221,167 @@ textarea:focus {
 
 body {
   height: 100%;
+  
 }
 
-.robotimages {
-  height: 20%;
+.spacer {
+  height: 6%;
+}
+
+.checkmark {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.box input:checked ~ .checkmark {
+  background-color: #46b95b;
+}
+
+.checkmark-radio {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.box:hover input ~ .checkmark-radio {
+  background-color: #ccc;
+}
+
+.box input:checked ~ .checkmark-radio {
+  background-color: #46b95b;
+}
+
+.robotimage1 {
+  width: 30%;
+  height: auto;
+  float: right;
+  margin: 1%;
+  border-radius: 2%;
+}
+
+.robotimage2 {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin: 1%;
+  border-radius: 2%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #d89941;
+  line-height: 1;
+  width: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 0;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #d89941;
+  line-height: .5;
+  width: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 1%;
+}
+
+.vermont {
+  position: fixed;
+  height: 25%;
   width: auto;
+  top: 6%;
+  right: 2.5%;
+}
+
+.subheading {
+  line-height: 1;
+}
+
+.calendar1 {
+  position: fixed;
+  right: 2%;
+  top: 30%;
+  background-color: #cdcdcd;
+  width: 14%;
+  height: 13%;
+  border-radius: 5px;
+  color: #2c3f30;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+.calendar2 {
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  background-color: #cdcdcd;
+  width: 14%;
+  height: 13%;
+  border-radius: 5px;
+  color: #2c3f30;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+.calendar3 {
+  position: fixed;
+  right: 2%;
+  top: 70%;
+  background-color: #cdcdcd;
+  width: 14%;
+  height: 13%;
+  border-radius: 5px;
+  color: #2c3f30;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+h5 {
+  line-height: 1.4;
+  margin-top: 0;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+p3 {
+  line-height: 1.5;
+  margin: 0;
+  font-size: 1.2em;
 }

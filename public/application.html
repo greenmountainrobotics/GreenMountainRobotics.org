@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width">
   <title>Application Page</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="/script.js"></script>
 </head>
 
   <body>
   <div class="container">
     <div class="sidebar">
-      <a href="/application.html"><img src="https://cloud-qnxbbhdn1-hack-club-bot.vercel.app/0green_mountain_robotics_logo_revision_3__color_.png" class="logo"></a>
+      <a href="/index.html"><img src="https://cloud-qnxbbhdn1-hack-club-bot.vercel.app/0green_mountain_robotics_logo_revision_3__color_.png" class="logo"></a>
       <div class="notlogo">
       <div class="quicklinks">
       <a href="https://github.com/HiveMindRobotics/FRC"><svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" alt="GitHub" fill="white" class="quicklinks">
@@ -21,8 +22,10 @@
      <a href="https://instagram.com/greenmountainrobotics"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" class="quicklinks" height="32" width="32"></a>
       </div>
       <div class="pages">
-    <a href="/application.html" class="otherpage">Join Our Team!</a>
-    <a href="/robots.html" class="otherpage">Our Robots!</a>
+    <a href="/application.html" class="otherpage">Join the Team!</a>
+    <!-- <a href="/robots.html" class="otherpage">Our Robots!</a> -->
+    <!-- <a href="/sponsor-page.html" class="otherpage">Sponsors!</a> -->
+    <!-- <a href="/projects.html" class="otherpage">Current Projects</a> -->
     <a href="https://www.thebluealliance.com/team/9101" class="otherpage">The Blue Alliance:</a>
     <a href="https://bank.hackclub.com/donations/start/green-mountain-robotics" class="otherpage">Donate Today!</a>
       </div>
@@ -42,44 +45,57 @@
 <input type="text" id="email" placeholder="Enter email here..." name="email" class="textbox"><br>
 
 <p2>Teams you are interested in joining:</p2><br>
-<input type="checkbox" id="software" name="Robo-Team" value="Software">
-  <label for="software">Software</label><br>
-<input type="checkbox" id="hardware" name="Robo-Team" value="Hardware">
-  <label for="hardware">Hardware</label><br>
-<input type="checkbox" id="business" name="Robo-Team" value="Business">
-  <label for="business">Business</label><br>
+  <label class="box" for="software">Software
+    <input type="checkbox" id="software" name="Robo-Team" value="Software">
+    <span class="checkmark"></span>
+  </label>
+  <label class="box" for="hardware">Hardware
+    <input type="checkbox" id="hardware" name="Robo-Team" value="Hardware">
+    <span class="checkmark"></span>
+  </label>
+  <label class="box" for="business">Business
+    <input type="checkbox" id="business" name="Robo-Team" value="Business">
+    <span class="checkmark"></span>
+  </label>
   
-<p2>What previous experience do you have with FIRST?</p2><br>
-  <input type="checkbox" id="FLL" name="Previous Experience" value="FLL">
-    <label for="FLL">FLL</label><br>
-  <p id="fll-message" style="display:none">Wonderfufl! Lots of our members have also competed in FLL and they can help you transition from FLL to FRC</p>
-  <input type="checkbox" id="FTC" name="Previous Experience" value="FTC">
-    <label for="FTC">FTC</label><br>
-  <p id="ftc-message" style="display:none">This is what we as a team did before FRC, so we are in the same situation as you.</p>
-  <input type="checkbox" id="FRC" name="Previous Experience" value="FRC">
-    <label for="FRC">FRC</label><br>
-  <p id="frc-message" style="display:none">Nice! Hopefully you can give us some suggestions from your prior experience.</p>
-  <input type="checkbox" id="None" name="Previous Experience" value="None">
-    <label for="None">None</label><br>
-  <p id="none-message" style="display:none">Don't worry about being inexperienced, we are a new team and lots of us don't have much experience either.</p>
+<p2>What previous experience do you have with FIRST/STEAM?</p2><br>
+
+<textarea id="experience" rows="3" placeholder="Enter text here..."></textarea><br>
 
 <p2>What grade are you in?</p2><br>
-  <input type="radio" id="Freshman" name="grade" value="Freshman">
-    <label for="Freshman">Freshman</label><br>
-  <input type="radio" id="SophomoreJunior" name="grade" value="SophomoreJunior">
-    <label for="Sophomore">Sophomore</label><br>
-  <input type="radio" id="Junior" name="grade" value="Junior">
-    <label for="Junior">Junior</label><br>
-  <input type="radio" id="Senior" name="grade" value="Senior">
-    <label for="Senior">Senior</label><br>
-  <input type="radio" id="other/mentor" name="grade" value="other/mentor">
-    <label for="other/mentor">Other/Mentor</label><br>
+  
+    <label class="box" for="Freshman">Freshman
+      <input type="radio" id="Freshman" name="grade" value="Freshman">
+      <span class="checkmark-radio"></span>
+    </label>
+
+    <label class="box" for="Sophomore">Sophomore
+      <input type="radio" id="Sophomore" name="grade" value="Sophomore">
+      <span class="checkmark-radio"></span>
+    </label>
+
+    <label class="box" for="Junior">Junior
+      <input type="radio" id="Junior" name="grade" value="Junior">
+      <span class="checkmark-radio"></span>
+    </label>
+
+    <label class="box" for="Senior">Senior
+      <input type="radio" id="Senior" name="grade" value="Senior">
+      <span class="checkmark-radio"></span>
+    </label>
+
+    <label class="box" for="other/mentor">Other/Mentor
+      <input type="radio" id="other/mentor" name="grade" value="other/mentor">
+      <span class="checkmark-radio"></span>
+    </label>
 
 <p2>Why do you want to join our team?</p2><br>
   <textarea id="reasoning" name="Reasoning" rows="3" placeholder="Enter text here..."></textarea><br><br>
   
-<input type="submit" value="Submit" class="button"><br><br><br>
+<input type="button" value="Submit" class="button" onclick="OnSubmit()">
+<p id="FormResponse"></p>
 </form>
+<div class="spacer"></div>
     </div>
   </div>
   <div class="sponsor-board">
