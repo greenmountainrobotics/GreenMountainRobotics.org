@@ -88,19 +88,27 @@ p {
 .notlogo {
   padding-left: 12%;
   padding-bottom: 0;
-  padding-top: 10%;
+  padding-top: 7%;
+  align-content: space-between;
 }
 
 .quicklinks {
-  top: 325px;
+  top: 0;
+  width: 100%;
+  height: 13%;
   display: flex;
   flex-direction: row;
-  margin-right: 25px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.links {
+  float: left;
+  display: flex;
+  margin-right: 9.5%;
+}
+
 .pages {
-  margin-top: 30px;
+  margin-top: 10%;
   font-family: 'Josefin Sans', sans-serif;
   flex-direction: column;
 }
@@ -337,40 +345,46 @@ h4 {
 .calendar1 {
   position: fixed;
   right: 2%;
-  top: 30%;
+  top: 33%;
   background-color: #cdcdcd;
   width: 14%;
   height: 13%;
   border-radius: 5px;
   color: #2c3f30;
-  padding-left: 1%;
+  padding-left: 1.5%;
   padding-top: 1%;
+  outline: 2.0px solid #2c3f30;
+  outline-offset: -8px;
 }
 
 .calendar2 {
   position: fixed;
   right: 2%;
-  top: 50%;
+  top: 53%;
   background-color: #cdcdcd;
   width: 14%;
   height: 13%;
   border-radius: 5px;
   color: #2c3f30;
-  padding-left: 1%;
+  padding-left: 1.5%;
   padding-top: 1%;
+  outline: 2.0px solid #2c3f30;
+  outline-offset: -8px;
 }
 
 .calendar3 {
   position: fixed;
   right: 2%;
-  top: 70%;
+  top: 73%;
   background-color: #cdcdcd;
   width: 14%;
   height: 13%;
   border-radius: 5px;
   color: #2c3f30;
-  padding-left: 1%;
+  padding-left: 1.5%;
   padding-top: 1%;
+  outline: 2.0px solid #2c3f30;
+  outline-offset: -8px;
 }
 
 h5 {
