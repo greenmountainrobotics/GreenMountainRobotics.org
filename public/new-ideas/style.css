@@ -21,7 +21,7 @@ body {
     width: 70%;
     height: auto;
     margin-top: 95px;
-    margin-left: 50px;
+    margin-left: 60px;
     position: fixed;
 }
 
@@ -88,13 +88,14 @@ body {
 
 .cal-header {
     margin: 0;
-    color: darkgreen;
+    color: black;
     font-size: 16pt;
 }
 
 .cal-text {
-    color: darkgreen;
+    color: black;
     font-size: 14pt;
+    line-height: 1.25;
 }
 
 .cal-title {
@@ -107,4 +108,5 @@ body {
 p {
     font-size: 18pt;
     color: black;
+    line-height: 1.5;
 }
