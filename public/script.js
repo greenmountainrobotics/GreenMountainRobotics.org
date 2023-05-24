@@ -1,6 +1,3 @@
-setTimeout(()=> {
-    
-function OnSubmit() 
+function clearForm() {
     document.getElementById("myForm").reset();
 }
-,3000);

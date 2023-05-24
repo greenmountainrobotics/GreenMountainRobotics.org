@@ -25,10 +25,21 @@ html::-webkit-scrollbar {
 .content {
   top: 0;
   margin-bottom: 70px;
-  margin-left: 120%;
+  margin-left: 355px;
   position: relative;
   /* left: 118%; */
-  width: 320%;
+  width: 142%;
+  height: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-app {
+  top: 0;
+  margin-bottom: 70px;
+  margin-left: 355px;
+  position: relative;
+  /* left: 118%; */
+  width: 125%;
   height: 90%;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -41,8 +52,19 @@ html::-webkit-scrollbar {
   font-family: 'Josefin Sans', sans-serif;
   /* background-color: #1f2d22; */
   padding: none;
-  height: 9%;
+  height: 6%;
   width: 85%;
+  margin-bottom: 0;
+}
+
+.applic{
+  text-align: left;
+  font-size: 2.5em;
+  color: #d89941;
+  line-height: 2;
+  width: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 3%;
 }
 
 h2 {
@@ -52,6 +74,7 @@ h2 {
   line-height: 2;
   width: 90%;
   font-family: 'Josefin Sans', sans-serif;
+  margin-top: 5%;
   }
 
 p {
@@ -64,9 +87,9 @@ p {
 }
 
 .logo {
-  width: 80%;
-  padding-left: 14%;
-  padding-top: 12%;
+  width: 230px;
+  margin-left: 36px;
+  margin-top: 36px;
 }
 
 .sidebar {
@@ -74,15 +97,12 @@ p {
   flex-direction: column;
   position: fixed;
   background-color: #CDCDCD;
-  padding-right: 1.5%;
-  left: 2.2%;
-  top: 3%;
-  /* margin-left: 1%; */
-  padding-bottom: 1%;
-  height: 82%;
+  top: 0;
+  left: 0;
+  height: 100%;
   outline: 5px solid #2c3f30;
   outline-offset: -15px;
-  width: 18%;
+  width: 300px;
 }
 
 .notlogo {
@@ -108,7 +128,7 @@ p {
 }
 
 .pages {
-  margin-top: 10%;
+  margin-top: 15%;
   font-family: 'Josefin Sans', sans-serif;
   flex-direction: column;
 }
@@ -189,6 +209,7 @@ textarea:focus {
 
 .textbox {
   width: 30%;
+  height: 100%;
   font-size: 1.2em;
   letter-spacing: .1em;
   background-color: #5e8767;
@@ -196,8 +217,8 @@ textarea:focus {
   border-color: black;
   border-width: 10px;
   font-family: 'Josefin Sans', sans-serif;
-  padding: 7px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 .textbox:focus {
