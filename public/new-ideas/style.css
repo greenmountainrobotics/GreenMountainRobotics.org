@@ -20,7 +20,7 @@ body {
 .content {
     width: 70%;
     height: auto;
-    margin-top: 90px;
+    margin-top: 95px;
     margin-left: 50px;
     position: fixed;
 }
@@ -102,4 +102,9 @@ body {
     margin: 0;
     padding-left: 8%;
     font-size: 23pt;
+}
+
+p {
+    font-size: 18pt;
+    color: black;
 }
