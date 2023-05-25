@@ -9,7 +9,7 @@
   <script src="/script.js"></script>
 </head>
 
-<body>
+<body onload="clearForm()">
   <div class="container">
     <div class="sidebar">
       <a href="/index.html"><img src="https://cloud-qnxbbhdn1-hack-club-bot.vercel.app/0green_mountain_robotics_logo_revision_3__color_.png" class="logo"></a>
@@ -32,12 +32,10 @@
       </div>
     </div>
     </div>
-    <div class="content">
-
+    <div class="content-app">
 <h1 class="title">Team Application</h1>
 <p>If you live in the Chittenden County area and you are interested in robotics, coding, or any type of engineering you should consider applying to our FIRST Robotics Competition team. Our team is a small group of high schoolers from around the county and we could always have more help creating our robot in the upcoming FRC seasons.</p>
-<br>
-  <h2>Application Form:</h2>
+  <h class="applic">Application Form:</h>
 <form action="https://formspree.io/f/xpzenvad" method="POST" id="myForm">
   <!-- Default WIdth of "text" is 20 characters -->
 <input type="text" id="fname" placeholder="Enter full name here..." name="fname" class="textbox"><br>
@@ -65,6 +63,11 @@
 
 <p2>What grade are you in?</p2><br>
   
+    <label class="box" for="8th-Grade">8th Grade
+      <input type="radio" id="8th-Grade" name="grade" value="8th Grade">
+      <span class="checkmark-radio"></span>
+    </label>
+
     <label class="box" for="Freshman">Freshman
       <input type="radio" id="Freshman" name="grade" value="Freshman">
       <span class="checkmark-radio"></span>
@@ -97,6 +100,21 @@
 <p id="FormResponse"></p>
 </form>
 <div class="spacer"></div>
+<div class="calendar1">
+  <h5>Meeting:</h5>
+  <p3>May 19th</p3><br>
+  <p3>3 - 6pm</p3>
+ </div>
+ <div class="calendar2">
+   <h5>Meeting:</h5>
+   <p3>May 20th</p3><br>
+   <p3>9am - 12pm</p3>
+  </div>
+  <div class="calendar3">
+   <h5>Summer Camp:</h5>
+   <p3>July 17th - 21st</p3><br>
+   <p3>9am - 3pm</p3>
+  </div>
     </div>
   </div>
   <div class="sponsor-board">
