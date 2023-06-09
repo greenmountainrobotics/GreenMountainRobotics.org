@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 html {
-    height: 190%;
+    height: 100%;
     width: 100%;
-    background-color: lightgray;
     left: 0;
     top: 0;
     font-family: 'Josefin Sans', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 body {
@@ -17,26 +18,90 @@ body {
     margin: 0;
 }
 
-.content {
-    width: 68%;
-    height: 90%;
-    margin-top: 100px;
-    margin-left: 5%;
+.content1 {
+    width: 80%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    position: relative;
+    background-color: lightgray;
+    margin-top: 0;
+}
+
+.content2 {
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    position: relative;
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: row;
+}
+
+.par-text {
+    font-size: 18pt;
+    color: black;
+    line-height: 1.5;
+    margin: 0;
+    text-indent: 50px;
+}
+
+.title_img {
+    width: 100%;
+    position: relative;
+    height: auto;
+    left: 0;
+    margin-top: 40px;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+}
+
+.left-div {
+    width: 45%;
+    height: auto;
+    margin-right: 8%;
+}
+
+.right-div {
+    width: 45%;
+    height: auto;
+}
+
+.right-img {
+    width: 100%;
+    height: auto;
     position: relative;
 }
 
 .title {
-    color: rgb(55, 73, 23);
-    font-size: 40pt;
-    text-align: center;
-    margin-top: 0;
+    color: black; 
+    font-size: 45pt;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(55, 73, 23,1);
+    padding: 10px;
+    width: 740px;
+    box-shadow: 15px 15px black;
 }
 
 .subtitle {
     color: rgb(55, 73, 23);
     font-size: 28pt;
     text-align: center;
-    margin-top: 0;
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 
 .topbar {
@@ -77,8 +142,8 @@ body {
     width: 20%;
     right: 2%;
     height: 82%;
-    top: 13%;
-    background: rgb(55, 73, 23);
+    top: 100px;
+    background: #2C3F30;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
@@ -110,31 +175,27 @@ body {
 }
 
 .cal-title {
-    color: lightgrey;
+    color: #D89941;
     margin: 0;
     padding-left: 8%;
     font-size: 23pt;
 }
 
-.par-text {
-    font-size: 18pt;
-    color: black;
-    line-height: 1.5;
-    margin-top: 5%;
-}
-
 .logo {
-    width: 10%;
-    height: auto;
-    
+    height: 50px;
+    width: auto;
+    padding-top: 4px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* FORM STARTS HERE */
 
 form {
     line-height: 2.5;
-  }
-  
+}
+
 label {
     color: black;
     font-size: 1.2em;
@@ -142,7 +203,7 @@ label {
     letter-spacing: .1em;
     font-family: 'Josefin Sans', sans-serif;
 }
-  
+
 p2 {
     line-height: 4;
     color: black;
@@ -150,7 +211,7 @@ p2 {
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 3%;
 }
-  
+
 textarea {
     width: 30%;
     background-color: darkolivegreen;
@@ -165,16 +226,16 @@ textarea {
     padding: 10px;
     border-radius: 6px;
 }
-  
+
 ::placeholder {
     color: #c5c9c5;
 }
-  
+
 textarea:focus {
     outline: none;
     width: 75%;
 }
-  
+
 .textbox {
     width: 30%;
     margin-top: 2%;
@@ -188,12 +249,12 @@ textarea:focus {
     padding-top: 12px;
     border-radius: 6px;
 }
-  
+
 .textbox:focus {
     outline: none;
     initial-value: 0;
 }
-  
+
 .button {
     font-size: 1.5em;
     background-color: rgb(55, 73, 23);
@@ -206,12 +267,12 @@ textarea:focus {
     width: 10%;
     border-radius: 6px;
 }
-  
+
 .button:hover {
     cursor: pointer;
     background-color: darkolivegreen;
 }
-  
+
 .button:focus {
     background-color: rgb(55, 73, 23);
 }
@@ -224,9 +285,9 @@ textarea:focus {
     width: 23px;
     background-color: darkolivegreen;
     border-radius: 3px;
-  }
-  
-  .box {
+}
+
+.box {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -237,25 +298,25 @@ textarea:focus {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  .box input {
+}
+
+.box input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  .box:hover input ~ .checkmark {
+}
+
+.box:hover input~.checkmark {
     background-color: rgb(55, 73, 23);
-  }
-  
-  .box input:checked ~ .checkmark {
-    background-color: black;
-  }
-  
-  .checkmark-radio {
+}
+
+.box input:checked~.checkmark {
+    background-color: #D89941;
+}
+
+.checkmark-radio {
     position: absolute;
     top: 14px;
     left: 0;
@@ -264,14 +325,124 @@ textarea:focus {
     background-color: darkolivegreen;
     border-radius: 50%;
     margin-right: 5px;
-  }
-  
-  .box:hover input ~ .checkmark-radio {
+}
+
+.box:hover input~.checkmark-radio {
     background-color: rgb(55, 73, 23);
-  }
-  
-  .box input:checked ~ .checkmark-radio {
-    background-color: black;
+}
+
+.box input:checked~.checkmark-radio {
+    background-color: #D89941;
+}
+
+/* FORM ENDS HERE */
+
+/* CALENDAR STARTS HERE */
+
+
+ul {
+    list-style-type: none;
+}
+
+.full-calendar {
+    width: 1000px;
+    height: 652px;
+    background-color: darkolivegreen;
+    outline: solid black 3px;
+    z-index: 5;
+}
+.month {
+    padding: 15px 25px;
+    width: 950px;
+    background: #2C3F30;
+    text-align: center;
+    height: 70px;
   }
 
-  /* FORM ENDS HERE */
+.month ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.month ul li {
+    color: #c5c9c5;
+    font-size: 30pt;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 12px;
+  }
+
+.month .prev {
+    float: left;
+    margin: 0;
+}
+
+.month .next {
+    float: right;
+    margin: 0;
+}
+
+.cal-table {
+    width: 1003px;
+    margin-left: -1px;
+    margin-top: 10px;
+}
+
+th {
+    color: black;
+    font-size: 20pt;
+    width: 13.6%;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+.cal-day {
+    height: 90px;
+    line-height: 1;
+    width: 13.6%;
+    text-align: center;
+    font-size: 13pt;
+    outline: solid 1px #2C3F30;
+    padding: 0;
+}
+
+.cal-headers {
+    height: 40px;
+    line-height: 1;
+    width: 13.6%;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.cal-top {
+    height: 18px;
+    top: 0;
+    background-color: #2C3F30;
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cal-bottom {
+    height: 60%;
+    margin-top: 7.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.cal-bottom p {
+    text-align: left;
+}
+
+td p {
+    margin: 0;
+}
+
+.cal-day:hover {
+    background-color: rgba(0,0,0,.1);
+}
