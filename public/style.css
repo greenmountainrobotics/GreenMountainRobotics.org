@@ -34,10 +34,7 @@ body {
     width: 90%;
     height: auto;
     padding: 5%;
-    padding-left: 6%;
-    padding-right: 6%;
     position: relative;
-    background-color: darkolivegreen;
     display: flex;
     flex-direction: row;
 }
@@ -69,12 +66,18 @@ body {
 .left-div {
     width: 45%;
     height: auto;
-    margin-right: 8%;
+    margin-right: 10%;
 }
 
 .right-div {
     width: 45%;
     height: auto;
+}
+
+.left-img {
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
 .right-img {
