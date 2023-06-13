@@ -108,7 +108,7 @@ body {
 }
 
 .topbar {
-    background-color: darkolivegreen;
+    background-color: #556b2f;
     overflow: hidden;
     top: 0;
     left: 0;
@@ -136,7 +136,7 @@ body {
 }
 
 .topbar a.active {
-    background-color: rgb(55, 73, 23);
+    background-color: #374917;
     color: #c5c9c5;
 }
 
@@ -448,4 +448,20 @@ td p {
 
 .cal-day:hover {
     background-color: rgba(0,0,0,.1);
+}
+
+.footer {
+    position: relative;
+    height: 10%;
+    width: 100%;
+    background-color: #c9c5c9;
+    justify-content: center;
+    margin: 0;
+}
+
+.footer-text {
+    color: black;
+    margin-left: 50%;
+    padding: 2%;
+    margin: 0;
 }
