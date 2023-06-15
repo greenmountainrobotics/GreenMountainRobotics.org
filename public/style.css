@@ -39,6 +39,14 @@ body {
     flex-direction: row;
 }
 
+.join-summary {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    background-color: #556b2f;
+}
+
 .par-text {
     font-size: 18pt;
     color: black;
@@ -107,6 +115,14 @@ body {
     margin-bottom: 3%;
 }
 
+.subtitle2 {
+    color: black;
+    font-size: 28pt;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
 .topbar {
     background-color: #556b2f;
     overflow: hidden;
@@ -152,15 +168,80 @@ body {
     flex-direction: column;
 }
 
+/* FORM STARTS HERE */
+
+form {
+    width: 80%;
+    height: 86%;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #556b2f;
+}
+
+.textbox {
+    width: 97%;
+    height: auto;
+    line-height: 1.5;
+    padding: 1.5%;
+    font-size: 14pt;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 7%;
+    background-color: lightgray;
+}
+
+.textbox:focus {
+    border: none;
+}
+
+.form-label {
+    font-size: 16pt;
+}
+
+.form-select {
+    font-size: 14pt;
+    width: 100%;
+    padding: 1.5%;
+    border-radius: 5px;
+    margin-top: 5%;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+}
+
+.submit {
+    background-color: #374917;
+    color: #c5c9c5;
+    border: none;
+    font-size: 14pt;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 5px;
+    margin-top: 10%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit:hover {
+    background-color: rgba(0,0,0,.15);
+    color: black;
+}
+
+/*
 .calendar {
     width: 63%;
     background-color: #c5c9c5;
     opacity: 1;
     margin-left: auto;
     margin-right: auto;
-    /* margin-left: 10%;
+    margin-left: 10%;
     margin-top: 15%;
-    margin-bottom: 15%; */
+    margin-bottom: 15%;
     height: 15%;
     padding: 7%;
 }
@@ -193,7 +274,7 @@ body {
     padding-right: 20px;
 }
 
-/* FORM STARTS HERE */
+FORM STARTS HERE
 
 form {
     line-height: 2.5;
@@ -338,9 +419,9 @@ textarea:focus {
     background-color: #D89941;
 }
 
-/* FORM ENDS HERE */
+FORM ENDS HERE 
 
-/* CALENDAR STARTS HERE */
+CALENDAR STARTS HERE 
 
 
 ul {
@@ -464,4 +545,4 @@ td p {
     margin-left: 50%;
     padding: 2%;
     margin: 0;
-}
+} */
