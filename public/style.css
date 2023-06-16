@@ -55,6 +55,11 @@ body {
     text-indent: 50px;
 }
 
+.par-text a {
+    color: #556b2f;
+    text-decoration-line: none;
+}
+
 .title_img {
     width: 100%;
     position: relative;
@@ -531,19 +536,21 @@ td p {
 .cal-day:hover {
     background-color: rgba(0,0,0,.1);
 }
-
+*/
 .footer {
     position: relative;
     height: 10%;
     width: 100%;
-    background-color: #c9c5c9;
+    background-color: rgba(55, 73, 23,1);
     justify-content: center;
+    text-align: center;
     margin: 0;
 }
 
 .footer-text {
-    color: black;
-    margin-left: 50%;
+    color: #c5c9c5;
+    margin-left: 30%;
     padding: 2%;
     margin: 0;
-} */
+    font-size: 14pt;
+} 
