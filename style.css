@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 html {
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
-    font-family: 'Josefin Sans', sans-serif;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    font-style: "Montserrat:wght@500", sans-serif;
 }
 
 body {
@@ -110,6 +111,7 @@ body {
     padding: 10px;
     width: 740px;
     box-shadow: 15px 15px black;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .subtitle {
@@ -118,6 +120,7 @@ body {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 3%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .subtitle2 {
@@ -126,6 +129,7 @@ body {
     text-align: center;
     margin-top: 0;
     margin-bottom: 3%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .topbar {
