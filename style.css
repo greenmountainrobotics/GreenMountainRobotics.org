@@ -118,7 +118,8 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgba(55, 73, 23,1);
     padding: 10px;
-    box-shadow: 15px 15px black;
+    width: 60%;
+    box-shadow: 5px 5px black;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -370,6 +371,7 @@ body {
     position: absolute;
     left: 50%;
     bottom: 8%;
+    width: 80%;
     transform: translate(-50%, -50%);
     background-color: rgba(55, 73, 23,1);
     padding: 10px;
