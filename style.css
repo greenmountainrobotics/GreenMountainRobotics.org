@@ -17,7 +17,10 @@ body {
     top: 0;
     left: 0;
     margin: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
+
 
 .content1 {
     width: 80%;
@@ -49,7 +52,7 @@ body {
 }
 
 .par-text {
-    font-size: 18pt;
+    font-size: 1.75vw;
     color: black;
     line-height: 1.5;
     margin: 0;
@@ -116,7 +119,7 @@ body {
 
 .subtitle {
     color: rgb(55, 73, 23);
-    font-size: 28pt;
+    font-size: 2.5vw;
     text-align: center;
     margin-top: 1%;
     margin-bottom: 3%;
