@@ -118,7 +118,6 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgba(55, 73, 23,1);
     padding: 10px;
-    width: 80%;
     box-shadow: 15px 15px black;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -367,14 +366,13 @@ body {
 
 .title {
     color: black; 
-    font-size: 45pt;
+    font-size: 6vw;
     position: absolute;
     left: 50%;
     bottom: 8%;
     transform: translate(-50%, -50%);
     background-color: rgba(55, 73, 23,1);
     padding: 10px;
-    width: 740px;
     box-shadow: 15px 15px black;
     font-family: 'Josefin Sans', sans-serif;
 }
