@@ -150,6 +150,7 @@ body {
     left: 0;
     width: 100%;
     position: fixed;
+    display: block;
     z-index: 2;
 }
 
@@ -414,6 +415,7 @@ body {
     height: 58px;
     position: fixed;
     z-index: 2;
+    transition: top 0.3s;
 }
 
 .topbar a {
