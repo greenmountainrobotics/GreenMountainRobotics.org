@@ -98,14 +98,24 @@ body {
 
 .left-img {
     width: 80%;
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     position: relative;
 }
 
 .right-img {
     width: 80%;
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    position: relative;
+}
+
+.join-img {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: auto;
     position: relative;
 }
@@ -204,7 +214,7 @@ form {
     height: auto;
     line-height: 1.5;
     padding: 1.5%;
-    font-size: 14pt;
+    font-size: 3.5vw;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -217,12 +227,12 @@ form {
 }
 
 .form-label {
-    font-size: 18pt;
+    font-size: 4vw;
     color: black;
 }
 
 .form-select {
-    font-size: 14pt;
+    font-size: 3.5vw;
     width: 100%;
     padding: 1.5%;
     border-radius: 5px;
@@ -236,7 +246,7 @@ form {
     background-color: #374917;
     color: #c5c9c5;
     border: none;
-    font-size: 14pt;
+    font-size: 3.5vw;
     width: auto;
     height: auto;
     padding: 2%;
