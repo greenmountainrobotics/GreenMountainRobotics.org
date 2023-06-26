@@ -384,6 +384,12 @@ body {
     position: relative;
 }
 
+.join-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
 .title {
     color: black; 
     font-size: 6vw;
