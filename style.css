@@ -202,6 +202,18 @@ body {
     flex-direction: column;
 }
 
+.ical {
+    display: none;
+}
+
+.no-cal-text {
+    font-size: 3.5vw;
+    color: black;
+    line-height: 1.5;
+    margin: 0;
+    text-indent: 50px;
+}
+
 /* FORM STARTS HERE */
 
 form {
@@ -472,6 +484,10 @@ body {
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
+}
+
+.no-cal-text {
+    display: none;
 }
 
 /* FORM STARTS HERE */
