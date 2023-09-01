@@ -73,6 +73,14 @@
         margin-top: 0;
     }
 
+    .title_img2 {
+        width: 100%;
+        position: relative;
+        height: auto;
+        left: 0;
+        margin-top: 0;
+    }
+
     .img-container {
         position: relative;
         text-align: center;
