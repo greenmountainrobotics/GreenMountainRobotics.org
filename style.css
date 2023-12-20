@@ -74,9 +74,9 @@
     }
 
     .title_img2 {
-        width: 100%;
-        position: relative;
-        height: auto;
+        max-width: 100%;
+        position: absolute;
+        height: 80%;
         left: 0;
         margin-top: 0;
     }
@@ -88,6 +88,15 @@
         height: auto;
         background-color: lightgray;
     }
+
+    .img-container2 {
+        position: relative;
+        text-align: center;
+        max-width: 100%;
+        height: 100%;
+        background-image: url(images/generator.jpg);
+        background-position: center center;
+    } 
 
     .left-div {
         width: 90%;
@@ -208,10 +217,6 @@
         justify-content: space-evenly;
         display: flex;
         flex-direction: column;
-    }
-
-    .ical {
-        display: none;
     }
 
     /* FORM STARTS HERE */
@@ -464,6 +469,19 @@
         font-size: 20px;
     }
 
+    .topbar a.darkmode-button {
+        height: 32px;
+        width: 75px;
+        float: right;
+        margin: 13px 17px 13px 0px;
+        padding: 0;
+        border: none;
+        border-radius: 16px;
+        background-color: #292626;
+        font-size: 16px;
+        display: none;
+    }
+
     .topbar a:hover {
         background-color: #c5c9c5;
         color: darkolivegreen;
@@ -551,7 +569,7 @@
         color: black;
     }
 
-    .footer {
+    /* .footer {
         position: relative;
         height: 10%;
         width: 100%;
@@ -567,10 +585,7 @@
         padding: 2%;
         margin: 0;
         font-size: 14pt;
-    }
-}
-
-@media (min-width: 768px) {
+    } */
 
     .link-block {
         width: 300px;
@@ -583,63 +598,8 @@
         z-index: 3;
     }
 
-}
-
-@media (max-width: 700px) and (min-width: 550px) {
-
-    .link-block {
-        width: 300px;
-        height: 45px;
-        background-color: white;
-        position: absolute;
-        margin-top: 7%;
-        top: 1250px;
-        left: 11.5%;
-        z-index: 3;
-    }
-}
-
-@media (max-width: 550px) and (min-width: 500px) {
-
-    .link-block {
-        width: 250px;
-        height: 45px;
-        background-color: white;
-        position: absolute;
-        margin-top: 7%;
-        top: 1265px;
-        left: 11.5%;
-        z-index: 3;
-    }
-
-}
-
-@media (max-width: 500px) and (min-width: 460px) {
-
-    .link-block {
-        width: 250px;
-        height: 45px;
-        background-color: white;
-        position: absolute;
-        margin-top: 7%;
-        top: 1360px;
-        left: 11.5%;
-        z-index: 3;
-    }
-
-}
-
-@media (max-width: 460px) {
-
-    .link-block {
-        width: 250px;
-        height: 45px;
-        background-color: white;
-        position: absolute;
-        margin-top: 7%;
-        top: 1450px;
-        left: 11.5%;
-        z-index: 3;
+    .fc-credit-button.fc-button.fc-button-primary {
+        display: none !important;
     }
 
 }
