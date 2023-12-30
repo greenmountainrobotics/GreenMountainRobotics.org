@@ -151,7 +151,7 @@
         background-color: rgba(55, 73, 23, 1);
         padding: 10px;
         width: 75%;
-        box-shadow: 5px 5px black;
+        box-shadow: 5px 5px #2c2a2a;
         font-family: 'Josefin Sans', sans-serif;
     }
 
@@ -414,7 +414,7 @@
     }
 
     .title {
-        color: black;
+        color: #1f1d1d;
         font-size: 6vw;
         position: absolute;
         left: 50%;
@@ -422,8 +422,8 @@
         width: 80%;
         transform: translate(-50%, -50%);
         background-color: rgba(55, 73, 23, 1);
-        padding: 10px;
-        box-shadow: 15px 15px black;
+        padding: 12px 0px 0px 0px;
+        box-shadow: 15px 15px #1f1d1d;
         font-family: 'Josefin Sans', sans-serif;
     }
 
