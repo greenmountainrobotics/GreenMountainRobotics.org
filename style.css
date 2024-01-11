@@ -602,4 +602,9 @@
         display: none !important;
     }
 
+    .donation-page {
+        width: 600px;
+        height: 125vh;
+    }
+
 }
